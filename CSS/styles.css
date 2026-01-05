@@ -41,7 +41,7 @@ main {
   color: white;
   text-shadow: 2px 2px 4px #000;
 }
-
+s
 .texto-superior h3 {
  /*  font-size: 3rem; */
   margin-top: 100px;
@@ -59,13 +59,9 @@ main {
 
 
 .animar-sobre {
-  transform: scale(1.2) rotateY(180deg);ss
+  transform: scale(1.2) rotateY(180deg);
   transition: transform 1.5s ease-in-out;
 }
-
-
-
-
 
 
 

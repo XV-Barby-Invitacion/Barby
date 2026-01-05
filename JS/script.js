@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (sobre) {
     sobre.addEventListener("click", () => {
+      // Activa animación
       sobre.classList.add("animar-sobre");
 
+      // Después de 1.5 segundos redirige
       setTimeout(() => {
-        window.location.href = "./invitacion.html";
+        window.location.href = "invitacion.html";
       }, 1500);
     });
-  } else {
-    console.error("No se encontró el elemento con id='sobre'");
   }
 });
