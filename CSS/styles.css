@@ -38,8 +38,13 @@ main {
   text-shadow: 2px 2px 4px #000;
 }
 
+.texto-superior h3 {
+ /*  font-size: 3rem; */
+  margin-top: 100px;
+ }
+
 .texto-superior h1 {
-  font-size: 3rem;
+  font-size: 18rem;
   margin-top: 20px;
  }
 
@@ -59,11 +64,12 @@ main {
 
 @media screen and (max-width: 768px) {
   .texto-superior h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   .texto-superior p {
     font-size: 1rem;
+    margin-top: 135px;
   }
 
   #inicio {
