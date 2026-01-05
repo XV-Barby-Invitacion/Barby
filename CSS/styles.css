@@ -68,7 +68,13 @@ s
 /*  375px en el navegador web para la visualizacion en celular*/
 @media screen and (max-width: 768px) {
   .texto-superior h1 {
-    font-size: 3.5rem;
+    font-size: 10vh;
+    margin-top: 95px;
+  }
+
+    .texto-superior h3 {
+    font-size: 4vh;
+    margin-top:5px;
   }
 
   .texto-superior p {
@@ -83,6 +89,5 @@ s
   .imagen-portada {
     object-position: center;
   }
-
-
 }
+
