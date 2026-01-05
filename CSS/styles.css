@@ -47,3 +47,30 @@ main {
  /*  font-size: 1.5rem; */
   margin-top: 10rem;
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .texto-superior h1 {
+    font-size: 2rem;
+  }
+
+  .texto-superior p {
+    font-size: 1rem;
+  }
+
+  #inicio {
+    height: 100vh;
+  }
+
+  .imagen-portada {
+    object-position: center;
+  }
+}
