@@ -1,23 +1,43 @@
-/* font */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales */
-main {
-  width: 100%;
-  margin: 0 auto;
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Sección de presentación */
+/* TRANSICIONES DE PÁGINA */
+body {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  font-family: 'Georgia', serif;
+  background-color: #f6f1ec;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* PORTADA */
 #inicio {
-  position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 .presentacion {
@@ -30,93 +50,74 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .texto-superior {
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 2px 2px 5px black;
 }
-s
+
 .texto-superior h3 {
- /*  font-size: 3rem; */
-  margin-top: 100px;
- }
+  font-size: 2rem;
+}
 
 .texto-superior h1 {
-  font-size: 18rem;
-  margin-top: 20px;
- }
+  font-size: 10rem;
+}
 
 .texto-superior p {
- /*  font-size: 1.5rem; */
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
-/* transición 1 */
-/* .animar-sobre {
-  transform: scale(1.2) rotateY(180deg);
-  transition: transform 1.5s ease-in-out;
-}
- */
-
-/* transicion 2 telon */
-
-.fade-in {
-  position: relative;
-  overflow: hidden;
+/* INVITACIÓN */
+.contenido {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.fade-in::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #8b0000; /* color telón */
-  animation: abrirTelon 1.5s ease-in-out forwards;
-  z-index: 10;
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-@keyframes abrirTelon {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+.card h2 {
+  font-size: 2.5rem;
 }
 
+.nombre {
+  font-size: 3rem;
+  margin-top: 10px;
+}
 
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #c89b6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+}
 
-
-
-
-/*  375px en el navegador web para la visualizacion en celular*/
-@media screen and (max-width: 768px) {
+/* RESPONSIVE */
+@media (max-width: 768px) {
   .texto-superior h1 {
-    font-size: 10vh;
-    margin-top: 95px;
-  }
-
-    .texto-superior h3 {
-       /*  color:red; */
-    font-size: 4vh;
-    margin-top:9px;
-  }
-
-  .texto-superior p {
-    font-size: 1rem;
-    margin-top: 145px;
-  }
-
-  #inicio {
-    height: 100vh;
-  }
-
-  .imagen-portada {
-    object-position: center;
+    font-size: 6rem;
   }
 }
-

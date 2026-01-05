@@ -1,16 +1,11 @@
-/* document.addEventListener("DOMContentLoaded", () => {
-  const sobre = document.getElementById("sobre");
+const sobre = document.getElementById("sobre");
 
-  if (sobre) {
-    sobre.addEventListener("click", () => {
-      // Activa animación
-      sobre.classList.add("animar-sobre");
+if (sobre) {
+  sobre.addEventListener("click", () => {
+    document.body.classList.add("fade-out");
 
-      // Después de 1.5 segundos redirige
-      setTimeout(() => {
-        window.location.href = "invitacion.html";
-      }, 1500);
-    });
-  }
-});
- */
+    setTimeout(() => {
+      window.location.href = "invitacion.html";
+    }, 1000);
+  });
+}
