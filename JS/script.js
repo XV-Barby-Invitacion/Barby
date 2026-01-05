@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
   const sobre = document.getElementById("sobre");
 
   if (sobre) {
@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+ */
