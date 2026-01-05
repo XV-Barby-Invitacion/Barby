@@ -1,0 +1,49 @@
+/* font */
+
+
+/* Estilos generales */
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Sección de presentación */
+#inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.presentacion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-superior {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.texto-superior h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+ }
+
+.texto-superior p {
+ /*  font-size: 1.5rem; */
+  margin-top: 10rem;
+}
