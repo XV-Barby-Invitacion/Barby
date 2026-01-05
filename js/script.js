@@ -36,6 +36,6 @@ if (sobre) {
     // cambiar página casi inmediato
     setTimeout(() => {
       window.location.href = "invitacion.html";
-    }, 200);
+    }, 150);
   });
 }
