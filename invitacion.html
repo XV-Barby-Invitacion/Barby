@@ -8,6 +8,7 @@
 </head>
 
 <body class="fade-in">
+<div class="transition-layer active"></div>
 
 <main class="contenido">
   <section class="card">
@@ -29,4 +30,15 @@
 </main>
 
 </body>
+<script>
+  window.addEventListener("load", () => {
+    const t = document.querySelector(".transition-layer");
+    if (t) {
+      setTimeout(() => {
+        t.classList.remove("active");
+      }, 100);
+    }
+  });
+</script>
+
 </html>
