@@ -1,5 +1,9 @@
 /* font */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Estilos generales */
 main {
@@ -61,7 +65,7 @@ main {
 
 
 
-
+/*  375px en el navegador web para la visualizacion en celular*/
 @media screen and (max-width: 768px) {
   .texto-superior h1 {
     font-size: 3.5rem;
@@ -69,7 +73,7 @@ main {
 
   .texto-superior p {
     font-size: 1rem;
-    margin-top: 135px;
+    margin-top: 177px;
   }
 
   #inicio {
