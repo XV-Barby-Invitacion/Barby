@@ -11,26 +11,114 @@
 <div class="transition-layer active"></div> <!-- no borrar -->
 
  <main>
-<h1>hola</h1>
     <!-- 1. Introducción / Bienvenida -->
-    <section id="bienvenida">
-      <!-- Mensaje inicial -->
-    </section>
+    <!-- 1. Introducción / Bienvenida -->
+  <section id="bienvenida">
+    <div class="bienvenida-contenido">
+      <p class="bienvenida-texto">
+        Estás invitado a celebrar<br>
+        una bella historia.
+      </p>
 
-    <!-- 2. Nombre / XV -->
-    <section id="nombre">
-      <!-- Nombre de la quinceañera -->
-    </section>
+      <p class="bienvenida-nombre">
+        Barby
+      </p>
+      <!-- reproductor. -->
+       <div class="reproductor">
+  <p class="reproductor-texto">
+    Dale play para escuchar la música
+  </p>
 
-    <!-- 3. Frase o mensaje especial -->
-    <section id="mensaje">
-      <!-- Frase emotiva -->
-    </section>
+  <button id="playMusica" class="btn-play">
+    ▶
+  </button>
 
-    <!-- 4. Detalles del evento -->
-    <section id="detalles">
-      <!-- Fecha, hora, lugar -->
-    </section>
+  <audio id="musica">
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+</div>
+
+    </div>
+  </section>
+
+    <!-- 2. Frases -->
+<section id="frases">
+  <p class="frase-superior">
+    Con la bendición de Dios, el amor de mis padres y familia,
+    quiero compartir a su lado este momento lleno de mucha ilusión.
+  </p>
+
+  <p class="frase-xv">
+    XV AÑOS
+  </p>
+
+  <p class="frase-inferior">
+    Tu presencia ayudará a transformar mi noche inolvidable en uno
+    de los días más importantes de mi vida.
+  </p>
+</section>
+
+
+ <!-- 3. Padres y padrinos -->
+<section id="padres">
+
+  <h2 class="titulo-seccion">Mis padres</h2>
+  <p class="nombres">
+    Blanca Martínez<br>
+    Carlos Ortega
+  </p>
+
+  <h2 class="titulo-seccion">Mis padrinos</h2>
+  <p class="nombres">
+    Kelly Ortega<br>
+    Marcos Delgadillo
+  </p>
+<p class="texto-invitacion">
+    Tienen el honor de invitarte a la celebración de mis XV años,
+    que se celebrarán el día:
+  </p>
+</section>
+
+
+ <!-- 4. Fecha / Cuenta regresiva -->
+<section id="fecha">
+
+  <h2 class="mes-anio">Febrero 2026</h2>
+
+  <!-- Calendario -->
+  <div class="calendario">
+    <div class="dias-semana">
+      <span>Do</span><span>Lu</span><span>Ma</span><span>Mi</span>
+      <span>Ju</span><span>Vi</span><span>Sá</span>
+    </div>
+
+    <div class="dias">
+      <!-- Febrero 2026 empieza en domingo -->
+      <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+      <span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+
+      <span class="dia-especial">14</span>
+
+      <span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span>
+      <span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span>
+    </div>
+  </div>
+
+  <!-- Cuenta regresiva -->
+  <div class="cuenta">
+    <h2 class="cuenta-titulo">Sólo faltan…</h2>
+
+    <div class="contador">
+      <div><span id="dias">0</span><small>Días</small></div>
+      <div><span id="horas">0</span><small>Horas</small></div>
+      <div><span id="minutos">0</span><small>Min</small></div>
+      <div><span id="segundos">0</span><small>Seg</small></div>
+    </div>
+  </div>
+
+</section>
+
 
     <!-- 5. Ubicación -->
     <section id="ubicacion">
@@ -64,5 +152,53 @@
     }
   });
 </script>
+
+<!-- musica -->
+ <script>
+  const btnPlay = document.getElementById("playMusica");
+  const musica = document.getElementById("musica");
+
+  btnPlay.addEventListener("click", () => {
+    if (musica.paused) {
+      musica.play();
+      btnPlay.textContent = "❚❚";
+    } else {
+      musica.pause();
+      btnPlay.textContent = "▶";
+    }
+  });
+</script>
+
+<!-- calendario -->
+ <script>
+  const fechaEvento = new Date("2026-02-14T18:00:00").getTime();
+
+  const diasEl = document.getElementById("dias");
+  const horasEl = document.getElementById("horas");
+  const minutosEl = document.getElementById("minutos");
+  const segundosEl = document.getElementById("segundos");
+
+  function actualizarCuenta() {
+    const ahora = new Date().getTime();
+    const diferencia = fechaEvento - ahora;
+
+    if (diferencia <= 0) return;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    diasEl.textContent = dias;
+    horasEl.textContent = horas;
+    minutosEl.textContent = minutos;
+    segundosEl.textContent = segundos;
+  }
+
+  actualizarCuenta();
+  setInterval(actualizarCuenta, 1000);
+</script>
+
+
 </body>
 </html>

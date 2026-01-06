@@ -172,3 +172,301 @@ body.fade-out {
     font-size: 6rem;
   }
 }
+
+
+
+/* ========== MOBILE FIRST ========== */
+
+/* Bienvenida */
+#bienvenida {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.bienvenida-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Texto superior */
+.bienvenida-texto {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  color: #333;
+
+  max-width: 320px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+}
+
+/* Nombre más abajo */
+.bienvenida-nombre {
+  margin-top: 4rem;        /* separación clara en móvil */
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #111;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+  animation-delay: 0.6s;   /* entra después */
+}
+
+/* Animación */
+@keyframes aparecer-suave {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Reproductor de música */
+.reproductor {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reproductor-texto {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: #555;
+}
+
+/* Botón play */
+.btn-play {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: #d4af37; /* dorado */
+  color: #fff;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-play:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+/* Sección frases */
+#frases {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Frase superior */
+.frase-superior {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 340px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+}
+
+/* XV AÑOS protagonista */
+.frase-xv {
+  margin: 3rem 0;
+  font-size: 2.8rem;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: #111;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* Frase inferior */
+.frase-inferior {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 340px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+  animation-delay: 0.8s;
+}
+
+/* Sección padres */
+#padres {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Títulos */
+.titulo-seccion {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.12em;
+  color: #222;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+}
+
+/* Nombres */
+.nombres {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  letter-spacing: 0.05em;
+  margin-bottom: 2.5rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+
+/* Texto invitación */
+.texto-invitacion {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 340px;
+  margin-top: 1rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer-suave 1.2s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* Sección fecha */
+#fecha {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+/* Mes y año */
+.mes-anio {
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+}
+
+/* Calendario */
+.calendario {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 3rem;
+}
+
+.dias-semana,
+.dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.dias-semana span {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.dias span {
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.dia-especial {
+  position: relative;
+  background-color: #f8e1ea;
+  color: #c2185b;
+  font-weight: 600;
+}
+
+/* Corazón sin mover el layout */
+.dia-especial::after {
+  content: "❤️";
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-size: 0.8rem;
+}
+
+
+/* Cuenta regresiva */
+.cuenta-titulo {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.contador {
+  display: flex;
+  gap: 1rem;
+}
+
+.contador div {
+  background: #f5f5f5;
+  padding: 0.8rem 0.6rem;
+  border-radius: 10px;
+  min-width: 60px;
+}
+
+.contador span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: block;
+}
+
+.contador small {
+  font-size: 0.7rem;
+  color: #555;
+}
+
+
