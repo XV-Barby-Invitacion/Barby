@@ -469,4 +469,128 @@ body.fade-out {
   color: #555;
 }
 
+/* Sección ubicación */
+#ubicacion {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Bloques */
+.bloque-ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Títulos */
+.titulo-ubicacion {
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+
+/* Lugar */
+.lugar {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 320px;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Hora */
+.hora {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón */
+.btn-ubicacion {
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+
+  background-color: #d4af37; /* dorado */
+  color: #fff;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Sección vestimenta */
+#vestimenta {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Título */
+#vestimenta h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto */
+#vestimenta p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 320px;
+  color: #444;
+}
+
+
+/* Sección cierre */
+#cierre {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Título pequeño */
+#cierre h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto */
+#cierre p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 320px;
+  margin-bottom: 2.5rem;
+  color: #444;
+}
+
+/* Título final */
+#cierre h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+}
 
