@@ -73,15 +73,19 @@ body.fade-out {
 }
 
 .texto-superior h1 {
-  font-size: 10rem;
+font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 25px;
 }
 
 .texto-superior p {
-  margin-top: 2rem;
+  margin-top: 10px;
 }
 
+
 /* INVITACIÓN */
-.contenido {
+/* .contenido {
   min-height: 100vh;
   padding: 40px 20px;
   display: flex;
@@ -118,7 +122,7 @@ body.fade-out {
   text-decoration: none;
   border-radius: 30px;
   font-size: 1.1rem;
-}
+} */
 
 /* =========================
    TRANSICIÓN TIPO TELÓN
@@ -189,10 +193,21 @@ body.invitacion {
 }
 
 
+/* Imagen superior bienvenida */
+.imagen-bienvenida {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 110px;
+  max-width: 40%;
+}
 
 
 /* Bienvenida */
 #bienvenida {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -211,13 +226,12 @@ body.invitacion {
 
 /* Texto superior */
 .bienvenida-texto {
+  margin-top: 8rem;
   font-size: 1.4rem;
   line-height: 1.6;
   letter-spacing: 0.05em;
   color: #333;
-
   max-width: 320px;
-
   opacity: 0;
   transform: translateY(20px);
   animation: aparecer-suave 1.2s ease forwards;
@@ -225,12 +239,13 @@ body.invitacion {
 
 /* Nombre más abajo */
 .bienvenida-nombre {
-  margin-top: 4rem;        /* separación clara en móvil */
-  font-size: 3rem;
-  font-weight: 600;
+  margin-top: 3.5rem;        /* separación clara en móvil */
+  font-size: 7rem;
   letter-spacing: 0.1em;
-  color: #111;
-
+  /* color: #111; */
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
   opacity: 0;
   transform: translateY(20px);
   animation: aparecer-suave 1.2s ease forwards;
@@ -248,7 +263,7 @@ body.invitacion {
 
 /* Reproductor de música */
 .reproductor {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,7 +302,7 @@ body.invitacion {
 #frases {
   min-height: 100vh;
   padding: 3rem 2rem;
-
+position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,13 +312,23 @@ body.invitacion {
   /* background-color: #ffffff; */
 }
 
+.imagen-frases {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  max-width: 70%;
+}
+
+
 /* Frase superior */
 .frase-superior {
   font-size: 1rem;
   line-height: 1.7;
   color: #444;
   max-width: 340px;
-
+margin-top: 8rem;
   opacity: 0;
   transform: translateY(20px);
   animation: aparecer-suave 1.2s ease forwards;
@@ -311,12 +336,13 @@ body.invitacion {
 
 /* XV AÑOS protagonista */
 .frase-xv {
+  font-family: "Tangerine", cursive;
   margin: 3rem 0;
   font-size: 2.8rem;
   letter-spacing: 0.2em;
   font-weight: 600;
   color: #111;
-
+  margin-top: 5rem;
   opacity: 0;
   transform: translateY(20px);
   animation: aparecer-suave 1.2s ease forwards;
@@ -340,19 +366,18 @@ body.invitacion {
 #padres {
   min-height: 100vh;
   padding: 3rem 2rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   /* background-color: #ffffff; */
+  margin-top: -130px;
 }
 
 /* Títulos */
 .titulo-seccion {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   letter-spacing: 0.12em;
@@ -365,7 +390,7 @@ body.invitacion {
 
 /* Nombres */
 .nombres {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #444;
   letter-spacing: 0.05em;
