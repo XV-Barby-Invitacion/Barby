@@ -177,6 +177,20 @@ body.fade-out {
 
 /* ========== MOBILE FIRST ========== */
 
+
+/* Fondo exclusivo invitacion.html */
+body.invitacion {
+  background-color: #0b1f3f;
+  background-image: url("../assets/images/fondoDos.png");
+
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+
+
+
 /* Bienvenida */
 #bienvenida {
   min-height: 100vh;
@@ -185,7 +199,7 @@ body.fade-out {
   justify-content: center;
 
   padding: 2rem;
-  background-color: #ffffff;
+ /*  background-color: #ffffff; */
   text-align: center;
 }
 
@@ -280,7 +294,7 @@ body.fade-out {
   align-items: center;
 
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 /* Frase superior */
@@ -333,7 +347,7 @@ body.fade-out {
   align-items: center;
 
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 /* Títulos */
@@ -388,7 +402,7 @@ body.fade-out {
   align-items: center;
   text-align: center;
 
-  background-color: #ffffff;
+ /*  background-color: #ffffff; */
 }
 
 /* Mes y año */
@@ -479,7 +493,7 @@ body.fade-out {
   gap: 3rem;
 
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 /* Bloques */
@@ -539,7 +553,7 @@ body.fade-out {
   align-items: center;
 
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 /* Título */
@@ -569,7 +583,7 @@ body.fade-out {
   align-items: center;
 
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 /* Título pequeño */
@@ -593,4 +607,70 @@ body.fade-out {
   font-size: 2.5rem;
   letter-spacing: 0.2em;
 }
+
+/* =========================
+   DORADO GLOBAL INVITACIÓN
+   (SOLO AGREGAR)
+========================= */
+
+body.invitacion h1,
+body.invitacion h2 {
+  background: linear-gradient(
+    180deg,
+    #f9e7b2,
+    #e6c36a,
+    #cfa23f,
+    #f5e6b8
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 1px 1px rgba(0,0,0,0.25),
+    0 3px 8px rgba(0,0,0,0.35);
+}
+
+
+
+
+/* =========================
+   COLOR DORADO GLOBAL
+========================= */
+
+body.invitacion {
+  color: #e6c36a; /* dorado base */
+}
+
+/* Títulos */
+body.invitacion h1,
+body.invitacion h2 {
+  color: #f5e6b8;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+/* Párrafos */
+body.invitacion p,
+body.invitacion span,
+body.invitacion small {
+  color: #e6c36a;
+}
+
+/* Resaltar textos importantes */
+body.invitacion strong {
+  color: #f9e7b2;
+}
+
+
+/* =========================
+   TIPOGRAFÍA BELLA Y LA BESTIA
+========================= */
+
+body.invitacion h1,
+body.invitacion h2 {
+  font-family: 'Cinzel Decorative', serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
 
