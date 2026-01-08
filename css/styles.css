@@ -422,7 +422,7 @@ margin-top: 8rem;
 #fecha {
   min-height: 100vh;
   padding: 3rem 1.5rem;
-
+margin-top: -150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -511,7 +511,7 @@ margin-top: 8rem;
 
 /* Sección ubicación */
 #ubicacion {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 3rem 2rem;
 
   display: flex;
@@ -570,7 +570,7 @@ margin-top: 8rem;
 
 /* Sección vestimenta */
 #vestimenta {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 3rem 2rem;
 
   display: flex;
@@ -600,7 +600,7 @@ margin-top: 8rem;
 
 /* Sección cierre */
 #cierre {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 3rem 2rem;
 
   display: flex;
@@ -701,4 +701,27 @@ body.invitacion #vestimenta p,
 body.invitacion #cierre p {
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+/* Imagen decorativa sección padres */
+.imagen-padres {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  max-width: 45%;
+
+  position: relative;
+  bottom: 10rem; /* la baja un poco sobre la sección */
+  z-index: 2;
+}
+
+
+
+/* Imagen decorativa baile */
+.imagen-baile {
+  display: block;
+  margin: 2rem auto 3rem;
+  width: 450px;
+  max-width: 60%;
+  margin-top: -25rem;
 }
