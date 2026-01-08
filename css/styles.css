@@ -193,6 +193,8 @@ body.invitacion {
 }
 
 
+
+
 /* Imagen superior bienvenida */
 .imagen-bienvenida {
   position: absolute;
@@ -382,7 +384,6 @@ margin-top: 8rem;
   margin-bottom: 1rem;
   letter-spacing: 0.12em;
   color: #222;
-
   opacity: 0;
   transform: translateY(20px);
   animation: aparecer-suave 1.2s ease forwards;
@@ -593,7 +594,7 @@ margin-top: 8rem;
   font-size: 1rem;
   line-height: 1.6;
   max-width: 320px;
-  color: #444;
+  color: #ffffff;
 }
 
 
@@ -688,14 +689,16 @@ body.invitacion strong {
 
 
 /* =========================
-   TIPOGRAFÍA BELLA Y LA BESTIA
+   TEXTOS EN BLANCO ESPECÍFICOS
 ========================= */
 
-body.invitacion h1,
-body.invitacion h2 {
-  font-family: 'Cinzel Decorative', serif;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+body.invitacion .bienvenida-nombre,
+body.invitacion .frase-xv,
+body.invitacion .nombres,
+body.invitacion .lugar,
+body.invitacion .hora,
+body.invitacion #vestimenta p,
+body.invitacion #cierre p {
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
 }
-
-
