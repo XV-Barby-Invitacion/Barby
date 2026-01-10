@@ -733,3 +733,11 @@ body.invitacion #cierre p {
   width: 500px;
   max-width: 85%;
 }
+
+
+/* Día especial - 14 de febrero */
+.dias .dia-especial {
+  color: #b11226; /* rojo elegante */
+  font-weight: bold;
+  position: relative;
+}
